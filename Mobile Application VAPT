@@ -1,0 +1,124 @@
+
+                                                   ## What is Android Application VAPT?
+
+Android Application VAPT (Vulnerability Assessment and Penetration Testing) is the process of identifying, analyzing, and validating security vulnerabilities in Android mobile applications through static and dynamic testing techniques.
+
+
+
+                                                     ## Basic Information Collection
+
+Before starting the assessment, collect the following details:
+
+* Application Name
+* Application Version
+* Package Name
+* Developer Name
+
+
+                                                           ## Static Analysis Tools
+
+1. JADX
+2. MobSF
+
+
+                                                            ## Static Security Checks
+
+### AndroidManifest.xml Review
+
+Check for:
+
+* Debuggable Enabled
+* Backup Enabled (android:allowBackup="true")
+* Clear Text Traffic Enabled
+
+
+                                                            ### Source Code Review
+
+Check for:
+
+* Hardcoded API Keys
+* Hardcoded Credentials
+* Tokens
+* Firebase Configuration
+* Sensitive Information Disclosure
+* Weak Cryptography
+* Insecure Random Number Generation
+* Root Detection Mechanisms
+* SSL Pinning Implementation
+
+
+                                                          ### Certificate Analysis
+
+Check:
+
+* Signature Version
+* Certificate Details
+* Weak Signing Algorithms
+* Expired Certificates
+
+
+
+                                                         ## Dynamic Analysis
+
+### Tools
+
+* Burp Suite
+* Genymotion
+* Frida
+* Objection
+
+
+
+                                                             ## OWASP Mobile Top 10 Testing
+
+### M1 - Improper Credential Usage
+
+* Hardcoded credentials
+* Weak password storage
+
+### M2 - Inadequate Supply Chain Security
+
+* Third-party library review
+* Dependency analysis
+
+### M3 - Insecure Authentication/Authorization
+
+* Broken authentication
+* Broken access control
+
+### M4 - Insufficient Input/Output Validation
+
+* Injection attacks
+* Input validation issues
+
+### M5 - Insecure Communication
+
+* HTTP communication
+* Weak TLS configuration
+
+### M6 - Inadequate Privacy Controls
+
+* Sensitive data exposure
+* Privacy violations
+
+### M7 - Insufficient Binary Protections
+
+* Reverse engineering risks
+* Code tampering
+
+### M8 - Security Misconfiguration
+
+* Debug enabled
+* Backup enabled
+* Exported components
+
+### M9 - Insecure Data Storage
+
+* Plaintext sensitive data
+* Weak encryption
+
+### M10 - Insufficient Cryptography
+
+* Weak algorithms
+* Improper key management
+* OWASP Mobile Top 10 Issues
