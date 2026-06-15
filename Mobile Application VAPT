@@ -30,6 +30,8 @@ Check for:
 * Debuggable Enabled
 * Backup Enabled (android:allowBackup="true")
 * Clear Text Traffic Enabled
+* setWebContentsDebuggingEnabled(true)
+
 
 
                                                             ### Source Code Review
